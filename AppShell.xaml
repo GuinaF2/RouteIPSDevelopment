@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="RouteDevelopment.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:RouteDevelopment"
+    Title="RouteDevelopment"
+    Shell.FlyoutBehavior="Flyout">
+    
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" 
+        Title="MainPage"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:RouteLocals}"
+        Route="RouteLocals" 
+        Title="Locals"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:POIPage}"
+        Route="POIPage"
+        Title="Point of Interest"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:SignupPage}"
+        Route="SignupPage"
+        Title="Signup"/>
+    <ShellContent
+        ContentTemplate="{DataTemplate local:SigninPage}"
+        Route="SigninPage"
+        Title="SignIn"/>
+</Shell>

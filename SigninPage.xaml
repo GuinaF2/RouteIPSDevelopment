@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RouteDevelopment.SigninPage"
+             Title="SigninPage">
+    <ScrollView>
+        <VerticalStackLayout
+         Padding="30"
+         Spacing="25">
+            <HorizontalStackLayout
+            Spacing="70">
+                <Button
+                Text="Trocar Paleta"
+                TextColor="#fff8fa"
+                BackgroundColor="#0e1627"
+                FontSize="16"
+                FontFamily="Lexend"/>
+                <Button
+                TextColor="#fff8fa"
+                BackgroundColor="#0e1627"
+                Text="Aumentar Fonte"
+                FontSize="16"
+                FontFamily="Lexend"/>
+            </HorizontalStackLayout>
+            <!--Realizar Login-->
+            <Label
+            HorizontalOptions="Center"
+            FontSize="28"
+            Text="Realizar Login"
+            FontFamily="Lexend"/>
+            <!--E-mail Input-->
+            <VerticalStackLayout>
+                <Label
+                Text="E-mail"
+                FontSize="18"
+                FontFamily="Lexend"/>
+                <Entry
+                FontSize="16"
+                FontFamily="Lexend"/>
+            </VerticalStackLayout>
+            <!--Password Input-->
+            <VerticalStackLayout>
+                <Label
+                Text="Senha"
+                FontSize="18"
+                FontFamily="Lexend"/>
+                <Entry
+                FontSize="16"
+                FontFamily="Lexend"/>
+                <Label
+                    Text="Esqueceu a senha"
+                    FontSize="14"
+                    />
+            </VerticalStackLayout>
+            <!--Não Possuo Conta-->
+            <Label
+                HorizontalOptions="Center"
+                Text="Não Possuo Conta"
+                TextDecorations="Underline"
+                FontSize="16"
+                />
+            <!--Signin Button-->
+            <Button
+            Text="Login"
+            FontSize="28"
+            FontFamily="Lexend"
+            BackgroundColor="#0e1627"/>
+            <Label
+            HorizontalOptions="Center"
+            Text="Não quero fazer login"
+            TextDecorations="Underline"
+            FontSize="16"
+            />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

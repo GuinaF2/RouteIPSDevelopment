@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RouteDevelopment.POIPage"
+             Title="POIPage">
+    <ScrollView>
+        <VerticalStackLayout
+    Padding="30,0"
+    Spacing="25">
+            <!--Header-->
+            <HorizontalStackLayout
+        HorizontalOptions="Center"
+        Spacing="20">
+                <Label
+            FontSize="Large"
+            VerticalOptions="Center">
+                    Route
+                </Label>
+                <Button
+            WidthRequest="100"
+            MaximumHeightRequest="50"/>
+                <Button
+            WidthRequest="100"
+            MaximumHeightRequest="50"/>
+                <ImageButton
+            Source="splash.png"
+            WidthRequest="10"/>
+            </HorizontalStackLayout>
+
+            <!--Search Bar-->
+            <FlexLayout>
+                <Entry
+            WidthRequest="355"
+            />
+            </FlexLayout>
+            <!--Main Options-->
+            <Label
+        FontSize="Large"
+        TextColor="#0e1627">
+                Pontos de Interesse
+            </Label>
+            <Grid
+        MaximumHeightRequest="300"
+        >
+                <Button
+        x:Name="BtnLocal"
+        Text="Ponto de Interesse Genérico"
+        SemanticProperties.Hint="Irá acessar os pontos de interesse para faculdade x"
+        HorizontalOptions="Fill"/>
+
+            </Grid>
+            <!--Spacing-->
+            <VerticalStackLayout
+        HeightRequest="250"/>
+            <!--Footer-->
+            <HorizontalStackLayout
+        Spacing="100"
+                VerticalOptions="Fill">
+                <StackLayout
+                VerticalOptions="Center">
+                    <ImageButton Source="splash.png"
+                         WidthRequest="20"
+                         />
+                    <Label
+                HorizontalOptions="Center">
+                        Home
+                    </Label>
+
+                </StackLayout>
+                <VerticalStackLayout
+                VerticalOptions="Center">
+                    <ImageButton Source="splash.png"
+                         WidthRequest="20"
+                />
+                    <Label
+                    HorizontalOptions="Center">
+                        Map
+                    </Label>
+
+                </VerticalStackLayout>
+                <VerticalStackLayout
+            VerticalOptions="Center">
+                    <ImageButton Source="splash.png"
+                 WidthRequest="20"
+        />
+                    <Label
+                HorizontalOptions="Center">
+                        Settings
+                    </Label>
+
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

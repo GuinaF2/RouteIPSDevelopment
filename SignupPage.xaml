@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RouteDevelopment.SignupPage"
+             Title="SignupPage">
+    <ScrollView>
+        <VerticalStackLayout
+     Padding="30,0"
+     Spacing="25">
+            <HorizontalStackLayout
+                Spacing="70">
+                <Button
+                    Text="Trocar Paleta"
+                    TextColor="#fff8fa"
+                    BackgroundColor="#0e1627"
+                    FontSize="16"
+                    FontFamily="Lexend"/>
+                <Button
+                    TextColor="#fff8fa"
+                    BackgroundColor="#0e1627"
+                    Text="Aumentar Fonte"
+                    FontSize="16"
+                    FontFamily="Lexend"/>
+            </HorizontalStackLayout>
+            <!--Criar Conta-->
+            <Label
+                HorizontalOptions="Center"
+                FontSize="28"
+                Text="Criar Conta"
+                FontFamily="Lexend"/>
+            <!--E-mail Input-->
+            <VerticalStackLayout>
+                <Label
+                    Text="E-mail"
+                    FontSize="18"
+                    FontFamily="Lexend"/>
+                <Entry
+                    FontSize="16"
+                    FontFamily="Lexend"/>
+            </VerticalStackLayout>
+            <!--Password Input-->
+            <VerticalStackLayout>
+                <Label
+                    Text="Senha"
+                    FontSize="18"
+                    FontFamily="Lexend"/> 
+                <Entry
+                    FontSize="16"
+                    FontFamily="Lexend"/>
+            </VerticalStackLayout>
+            <!--Confirm Password-->
+            <VerticalStackLayout>
+                <Label
+                    Text="Confirmar Senha"
+                    FontSize="18"
+                    FontFamily="Lexend"/>
+                <Entry
+                    FontSize="16"
+                    FontFamily="Lexend"/>
+            </VerticalStackLayout>
+            <!--Singup Button-->
+            <Button
+                Text="Confirmar Cadastro"
+                FontSize="28"
+                FontFamily="Lexend"
+                BackgroundColor="#0e1627"/>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
