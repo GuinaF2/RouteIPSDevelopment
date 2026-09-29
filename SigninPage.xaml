@@ -64,7 +64,8 @@
             Text="Login"
             FontSize="28"
             FontFamily="Lexend"
-            BackgroundColor="#0e1627"/>
+            BackgroundColor="#0e1627"
+            Clicked="LoginButton_Clicked"/>
             <Label
             HorizontalOptions="Center"
             Text="Não quero fazer login"
