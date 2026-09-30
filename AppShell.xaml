@@ -31,4 +31,5 @@
         ContentTemplate="{DataTemplate local:SigninPage}"
         Route="SigninPage"
         Title="SignIn"/>
+
 </Shell>
