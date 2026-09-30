@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="RouteDevelopment.SettingsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Configurações"
+    BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="24,18,24,30"
+            Spacing="0">
+
+            <!-- ACESSIBILIDADE -->
+            <Label
+                Text="Acessibilidade"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="#512BD4"
+                Margin="0,10,0,12" />
+
+            <!-- Orientação por voz -->
+            <Grid
+                Padding="0,12"
+                MinimumHeightRequest="68"
+                ColumnDefinitions="*,Auto">
+
+                <VerticalStackLayout
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                    Spacing="4">
+
+                    <Label
+                        Text="Orientação por voz"
+                        FontSize="19"
+                        FontAttributes="Bold"
+                        TextColor="#1A1A1A" />
+
+                    <Label
+                        Text="Receber instruções faladas durante a navegação"
+                        FontSize="15"
+                        TextColor="#555555" />
+
+                </VerticalStackLayout>
+
+                <Switch
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    IsToggled="True"
+                    SemanticProperties.Description="Ativar ou desativar orientação por voz" />
+
+            </Grid>
+
+            <BoxView
+                HeightRequest="1"
+                BackgroundColor="#D6D6D6" />
+
+            <!-- Feedback por vibração -->
+            <Grid
+                Padding="0,12"
+                MinimumHeightRequest="68"
+                ColumnDefinitions="*,Auto">
+
+                <VerticalStackLayout
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                    Spacing="4">
+
+                    <Label
+                        Text="Feedback por vibração"
+                        FontSize="19"
+                        FontAttributes="Bold"
+                        TextColor="#1A1A1A" />
+
+                    <Label
+                        Text="Vibrar em instruções e alertas importantes"
+                        FontSize="15"
+                        TextColor="#555555" />
+
+                </VerticalStackLayout>
+
+                <Switch
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    IsToggled="True"
+                    SemanticProperties.Description="Ativar ou desativar feedback por vibração" />
+
+            </Grid>
+
+            <BoxView
+                HeightRequest="1"
+                BackgroundColor="#D6D6D6" />
+
+            <!-- Alto contraste -->
+            <Grid
+                Padding="0,12"
+                MinimumHeightRequest="68"
+                ColumnDefinitions="*,Auto">
+
+                <VerticalStackLayout
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                    Spacing="4">
+
+                    <Label
+                        Text="Alto contraste"
+                        FontSize="19"
+                        FontAttributes="Bold"
+                        TextColor="#1A1A1A" />
+
+                    <Label
+                        Text="Aumentar o contraste dos elementos da interface"
+                        FontSize="15"
+                        TextColor="#555555" />
+
+                </VerticalStackLayout>
+
+                <Switch
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    IsToggled="False"
+                    SemanticProperties.Description="Ativar ou desativar modo de alto contraste" />
+
+            </Grid>
+
+            <BoxView
+                HeightRequest="1"
+                BackgroundColor="#D6D6D6" />
+
+            <!-- Tamanho do texto -->
+            <Grid
+                Padding="0,15"
+                MinimumHeightRequest="68"
+                ColumnDefinitions="*,Auto">
+
+                <VerticalStackLayout
+                    Grid.Column="0"
+                    VerticalOptions="Center"
+                    Spacing="3">
+
+                    <Label
+                        Text="Tamanho do texto"
+                        FontSize="19"
+                        FontAttributes="Bold"
+                        TextColor="#1A1A1A" />
+
+                    <Label
+                        Text="Grande"
+                        FontSize="15"
+                        TextColor="#555555" />
+
+                </VerticalStackLayout>
+
+                <Label
+                    Grid.Column="1"
+                    Text="›"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    TextColor="#333333"
+                    VerticalOptions="Center" />
+
+            </Grid>
+
+            <!-- NAVEGAÇÃO -->
+            <Label
+                Text="Navegação"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="#512BD4"
+                Margin="0,24,0,8" />
+
+            <!-- Preferências de rota -->
+            <Grid
+                Padding="0,15"
+                MinimumHeightRequest="64"
+                ColumnDefinitions="*,Auto">
+
+                <Label
+                    Text="Preferências de rota"
+                    FontSize="19"
+                    FontAttributes="Bold"
+                    TextColor="#1A1A1A"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Grid.Column="1"
+                    Text="›"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    TextColor="#333333"
+                    VerticalOptions="Center" />
+
+            </Grid>
+
+            <BoxView
+                HeightRequest="1"
+                BackgroundColor="#D6D6D6" />
+
+            <!-- Precisão e localização -->
+            <Grid
+                Padding="0,15"
+                MinimumHeightRequest="64"
+                ColumnDefinitions="*,Auto">
+
+                <Label
+                    Text="Precisão e localização"
+                    FontSize="19"
+                    FontAttributes="Bold"
+                    TextColor="#1A1A1A"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Grid.Column="1"
+                    Text="›"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    TextColor="#333333"
+                    VerticalOptions="Center" />
+
+            </Grid>
+
+            <!-- APLICATIVO -->
+            <Label
+                Text="Aplicativo"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="#512BD4"
+                Margin="0,24,0,8" />
+
+            <!-- Tema -->
+            <Grid
+                Padding="0,15"
+                MinimumHeightRequest="64"
+                ColumnDefinitions="*,Auto">
+
+                <Label
+                    Text="Tema"
+                    FontSize="19"
+                    FontAttributes="Bold"
+                    TextColor="#1A1A1A"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Grid.Column="1"
+                    Text="›"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    TextColor="#333333"
+                    VerticalOptions="Center" />
+
+            </Grid>
+
+            <BoxView
+                HeightRequest="1"
+                BackgroundColor="#D6D6D6" />
+
+            <!-- Idioma -->
+            <Grid
+                Padding="0,15"
+                MinimumHeightRequest="64"
+                ColumnDefinitions="*,Auto">
+
+                <Label
+                    Text="Idioma"
+                    FontSize="19"
+                    FontAttributes="Bold"
+                    TextColor="#1A1A1A"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Grid.Column="1"
+                    Text="›"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    TextColor="#333333"
+                    VerticalOptions="Center" />
+
+            </Grid>
+
+            <!-- SOBRE -->
+            <Label
+                Text="Sobre"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="#512BD4"
+                Margin="0,24,0,8" />
+
+            <!-- Sobre o Route -->
+            <Grid
+                Padding="0,15"
+                MinimumHeightRequest="64"
+                ColumnDefinitions="*,Auto">
+
+                <Label
+                    Text="Sobre o Route"
+                    FontSize="19"
+                    FontAttributes="Bold"
+                    TextColor="#1A1A1A"
+                    VerticalOptions="Center" />
+
+                <Label
+                    Grid.Column="1"
+                    Text="›"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    TextColor="#333333"
+                    VerticalOptions="Center" />
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

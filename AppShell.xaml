@@ -6,8 +6,11 @@
     xmlns:local="clr-namespace:RouteDevelopment"
     Title="RouteDevelopment"
     Shell.FlyoutBehavior="Flyout">
-    
 
+    <ShellContent
+    ContentTemplate="{DataTemplate local:SettingsPage}"
+    Route="SettingsPage"
+    Title="Configurações"/>
     <ShellContent
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" 

@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="RouteDevelopment.csproj" />
+  <Project Path="RouteDevelopment.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
 </Solution>
