@@ -48,12 +48,12 @@
                 >
                 <Button
                 x:Name="Btn1"
-                Text="Universidades" 
+                Text="Biblioteca" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 WidthRequest="150"/>
                 <Button
                 x:Name="Btn2"
-                Text="Escolas" 
+                Text="Banheiro Feminino" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 WidthRequest="150"/>
             </HorizontalStackLayout>
