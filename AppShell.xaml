@@ -28,8 +28,5 @@
         ContentTemplate="{DataTemplate local:SigninPage}"
         Route="SigninPage"
         Title="SignIn"/>
-    <ShellContent
-    ContentTemplate="{DataTemplate local:PageTutorial}"
-    Route="PageTutorial"
-    Title="Tutorial"/>
+
 </Shell>

@@ -10,5 +10,6 @@ public partial class SigninPage : ContentPage
     private async void LoginButton_Clicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("PageTutorial");
+
     }
 }
