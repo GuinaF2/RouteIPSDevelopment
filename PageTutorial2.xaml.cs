@@ -1,14 +1,14 @@
 ﻿namespace RouteDevelopment;
 
-public partial class PageTutorial : ContentPage
+public partial class PageTutorial2 : ContentPage
 {
-    public PageTutorial()
+    public PageTutorial2()
     {
         InitializeComponent();
     }
 
     private async void NextButton_Clicked(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("PageTutorial2");
+        await Shell.Current.GoToAsync("//MainPage");
     }
 }
