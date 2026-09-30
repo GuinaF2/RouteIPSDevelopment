@@ -1,0 +1,116 @@
+﻿<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+     x:Class="RouteDevelopment.MapPage"
+    BackgroundColor="#FFF8FA">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20,20,20,30"
+            Spacing="20">
+
+            <!-- Cabeçalho -->
+            <HorizontalStackLayout
+                Spacing="15"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="←"
+                    FontSize="30"
+                    TextColor="#0E1627"
+                    BackgroundColor="Transparent"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Clicked="Voltar_Clicked" />
+
+                <Label
+                    Text="Navegação"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="#0E1627"
+                    VerticalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+
+            <!-- Instrução da navegação -->
+            <Border
+                BackgroundColor="#F7DAFF"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 30"
+                Padding="20"
+                Margin="0,5,0,0">
+
+                <Grid
+                    ColumnDefinitions="100,*"
+                    ColumnSpacing="20">
+
+                    <!-- Ícone de direção -->
+                    <Border
+                        Grid.Column="0"
+                        BackgroundColor="#0E1627"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 60"
+                        WidthRequest="85"
+                        HeightRequest="85"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="↑"
+                            FontSize="55"
+                            TextColor="#F7DAFF"
+                            HorizontalTextAlignment="Center"
+                            VerticalTextAlignment="Center" />
+
+                    </Border>
+
+                    <!-- Texto -->
+                    <VerticalStackLayout
+                        Grid.Column="1"
+                        Spacing="2"
+                        VerticalOptions="Center">
+
+                        <Label
+                            Text="Próximo passo:"
+                            FontSize="18"
+                            TextColor="#0E1627" />
+
+                        <Label
+                            Text="Caminhe para frente"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="#0E1627" />
+
+                        <Label
+                            Text="25 passos"
+                            FontSize="20"
+                            TextColor="#0E1627" />
+
+                    </VerticalStackLayout>
+
+                </Grid>
+
+            </Border>
+
+
+            <!-- Mapa -->
+            <Border
+                BackgroundColor="#FFF8FA"
+                Stroke="#0E1627"
+                StrokeThickness="2"
+                StrokeShape="RoundRectangle 20"
+                Padding="0">
+
+                <Image
+                    Source="mapanavegacaoroute.png"
+                    Aspect="AspectFit"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Center" />
+
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

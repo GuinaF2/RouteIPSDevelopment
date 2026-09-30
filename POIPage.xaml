@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RouteDevelopment.POIPage"
-             Title="POIPage">
+             Title="POIPage"
+             BackgroundColor="#FFF8FA">
     <ScrollView>
         <VerticalStackLayout
     Padding="30,0"
@@ -46,7 +47,9 @@
         x:Name="BtnLocal"
         Text="Ponto de Interesse Genérico"
         SemanticProperties.Hint="Irá acessar os pontos de interesse para faculdade x"
-        HorizontalOptions="Fill"/>
+        HorizontalOptions="Fill"
+        TextColor="#FFF8FA"
+        BackgroundColor="#0E1627"/>
 
             </Grid>
             <!--Spacing-->

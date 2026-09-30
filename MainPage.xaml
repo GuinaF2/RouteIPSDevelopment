@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RouteDevelopment.MainPage"
-             BackgroundColor="#F7DAFF">
+             BackgroundColor="#FFF8FA">
 
 
     <ScrollView>
@@ -21,11 +21,15 @@
                 <Button
                     WidthRequest="100"
                     MaximumHeightRequest="50"
-                    Text="Aumentar Contraste"/>
+                    Text="Aumentar Contraste"
+                    TextColor="#FFF8FA"
+                    BackgroundColor="#0E1627"/>
                 <Button
                     WidthRequest="100"
                     MaximumHeightRequest="50"
-                    Text="Aumentar Fonte"/>
+                    Text="Aumentar Fonte"
+                    TextColor="#FFF8FA"
+                    BackgroundColor="#0E1627"/>
                 <ImageButton
                     Source="splash.png"
                     WidthRequest="10"/>
@@ -53,12 +57,16 @@
                 Text="Biblioteca" 
                 SemanticProperties.Hint="Abre as informações da Biblioteca"
                 WidthRequest="150"
+                TextColor="#FFF8FA"
+                BackgroundColor="#0E1627"
                 Clicked="Biblioteca_Clicked"/>
                 <Button
                 x:Name="Btn2"
                 Text="Banheiro Feminino"
                 SemanticProperties.Hint="Abre as informações do banheiro feminino"
                 WidthRequest="150"
+                TextColor="#FFF8FA"
+                BackgroundColor="#0E1627"
                 Clicked="BanheiroFeminino_Clicked"/>    
             </HorizontalStackLayout>
             <!--Spacing-->
