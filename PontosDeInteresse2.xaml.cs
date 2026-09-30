@@ -11,4 +11,9 @@ public partial class PontosDeInteresse2 : ContentPage
     {
         await Shell.Current.GoToAsync("..");
     }
+
+    private async void IniciarRota_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("MapPage");
+    }
 }

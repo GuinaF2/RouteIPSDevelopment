@@ -10,6 +10,7 @@
             Routing.RegisterRoute("PageTutorial2", typeof(PageTutorial2));
             Routing.RegisterRoute("PontoInteressePage", typeof(PontoInteressePage));
             Routing.RegisterRoute("PontosDeInteresse2", typeof(PontosDeInteresse2));
+            Routing.RegisterRoute("MapPage", typeof(MapPage));
 
         }
     }
