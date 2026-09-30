@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RouteDevelopment.MainPage">
+             x:Class="RouteDevelopment.MainPage"
+             BackgroundColor="#F7DAFF">
+
 
     <ScrollView>
         <VerticalStackLayout
@@ -54,9 +56,10 @@
                 Clicked="Biblioteca_Clicked"/>
                 <Button
                 x:Name="Btn2"
-                Text="Banheiro Feminino" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                WidthRequest="150"/>
+                Text="Banheiro Feminino"
+                SemanticProperties.Hint="Abre as informações do banheiro feminino"
+                WidthRequest="150"
+                Clicked="BanheiroFeminino_Clicked"/>    
             </HorizontalStackLayout>
             <!--Spacing-->
             <VerticalStackLayout

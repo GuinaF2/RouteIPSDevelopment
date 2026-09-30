@@ -11,5 +11,9 @@
         {
             await Shell.Current.GoToAsync("PontoInteressePage");
         }
+        private async void BanheiroFeminino_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("PontosDeInteresse2");
+        }
     }
 }
