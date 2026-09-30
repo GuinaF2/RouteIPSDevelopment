@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="RouteDevelopment.PontoInteressePage"
+    BackgroundColor="#FFF8FA">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="25,20,25,30"
+            Spacing="20">
+
+            <!-- Cabeçalho -->
+            <HorizontalStackLayout
+                Spacing="15"
+                VerticalOptions="Center">
+
+                <Button
+                    Text="←"
+                    FontSize="30"
+                    TextColor="#0E1627"
+                    BackgroundColor="Transparent"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Clicked="Voltar_Clicked" />     
+
+                    <Label
+                    Text="Ponto de Interesse"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="#0E1627"
+                    VerticalOptions="Center" />
+
+            </HorizontalStackLayout>
+
+            <!-- Nome do local -->
+            <Label
+                Text="Biblioteca UniCesumar"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="#0E1627"
+                HorizontalTextAlignment="Center"
+                Margin="0,10,0,0" />
+
+            <!-- Imagem -->
+            <Border
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 20"
+                HeightRequest="220">
+
+                <Image
+                Source="bibliotecaunicesumar.png"
+                Aspect="AspectFill" />  
+
+            </Border>
+
+            <!-- Informações -->
+            <Border
+                BackgroundColor="#F7DAFF"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 20"
+                Padding="20"
+                Margin="0,5,0,0">
+
+                <VerticalStackLayout
+                    Spacing="8">
+
+                    <Label
+                        Text="Bloco 1"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="#0E1627" />
+
+                    <Label
+                        Text="Distância de 500 m"
+                        FontSize="18"
+                        TextColor="#0E1627" />
+
+                </VerticalStackLayout>
+
+            </Border>
+
+            <!-- Iniciar rota -->
+            <Button
+                Text="Iniciar rota"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="#FFF8FA"
+                BackgroundColor="#0E1627"
+                CornerRadius="15"
+                HeightRequest="60"
+                Margin="0,10,0,0" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

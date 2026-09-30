@@ -49,8 +49,9 @@
                 <Button
                 x:Name="Btn1"
                 Text="Biblioteca" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                WidthRequest="150"/>
+                SemanticProperties.Hint="Abre as informações da Biblioteca"
+                WidthRequest="150"
+                Clicked="Biblioteca_Clicked"/>
                 <Button
                 x:Name="Btn2"
                 Text="Banheiro Feminino" 
