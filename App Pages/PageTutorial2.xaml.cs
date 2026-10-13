@@ -7,8 +7,5 @@ public partial class PageTutorial2 : ContentPage
         InitializeComponent();
     }
 
-    private async void NextButton_Clicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("//MainPage");
-    }
+
 }

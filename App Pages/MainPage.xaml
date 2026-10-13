@@ -59,7 +59,7 @@
                 WidthRequest="150"
                 TextColor="#FFF8FA"
                 BackgroundColor="#0E1627"
-                Clicked="Biblioteca_Clicked"/>
+                />
                 <Button
                 x:Name="Btn2"
                 Text="Banheiro Feminino"
@@ -67,7 +67,7 @@
                 WidthRequest="150"
                 TextColor="#FFF8FA"
                 BackgroundColor="#0E1627"
-                Clicked="BanheiroFeminino_Clicked"/>    
+                />    
             </HorizontalStackLayout>
             <!--Spacing-->
             <VerticalStackLayout

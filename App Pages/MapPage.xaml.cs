@@ -7,8 +7,5 @@ public partial class MapPage : ContentPage
         InitializeComponent();
     }
 
-    private async void Voltar_Clicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("..");
-    }
+   
 }

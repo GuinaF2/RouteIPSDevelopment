@@ -72,7 +72,7 @@
             TextColor="#0E1627"
             BackgroundColor="Transparent"
             HorizontalOptions="Center"
-            Clicked="NextButton_Clicked" />
+            />
 
     </Grid>
 

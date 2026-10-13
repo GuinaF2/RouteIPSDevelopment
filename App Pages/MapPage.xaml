@@ -21,7 +21,7 @@
                     BackgroundColor="Transparent"
                     WidthRequest="50"
                     HeightRequest="50"
-                    Clicked="Voltar_Clicked" />
+                     />
 
                 <Label
                     Text="Navegação"
